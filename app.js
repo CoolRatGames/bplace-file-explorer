@@ -45,6 +45,7 @@ function loadFileOutput(content) {
         setOutput("exportedAt", data.exportedAt);
         setOutput("name", data.template.name);
         setOutput("opacity", data.template.opacity);
+        setOutput("position", `X: ${data.template.position.x} Y: ${data.template.position.y}`);
         setOutput("scale", data.template.scale);
         setOutput("rotation", data.template.rotation);
         setOutput("visible", data.template.visible);
