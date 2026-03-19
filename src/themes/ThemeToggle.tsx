@@ -3,7 +3,6 @@ import LightModeIcon from "../icons/LightModeIcon.tsx";
 import DarkModeIcon from "../icons/DarkModeIcon.tsx";
 
 const ButtonContainer = styled.button`
-    position: fixed;
     right: 0;
     margin: 16px;
     color: ${({ theme }) => theme.colors.text1};

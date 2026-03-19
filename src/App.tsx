@@ -43,8 +43,8 @@ export default function App() {
         <ThemeProvider theme={theme == "light" ? THEME_LIGHT : THEME_DARK}>
             <RootContainer onDragOver={preventDragDrop} onDrop={preventDragDrop}>
                 <ThemeToggle onClick={toggleTheme} />
-                <FileChooser onFileSelected={onFileChoose}></FileChooser>
                 <h1>Better Place File Explorer</h1>
+                <FileChooser onFileSelected={onFileChoose}></FileChooser>
                 <TemplateImageView template={template}/>
                 <TemplateDataView template={template}/>
             </RootContainer>
