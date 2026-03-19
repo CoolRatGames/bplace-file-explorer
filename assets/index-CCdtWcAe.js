@@ -90,7 +90,7 @@ Error generating stack: `+e.message+`
 `,rr=Hn.div`
     font-size: 13px;
 `;function ir({onFileSelected:e}){let t=(0,_.useRef)(null),[n,r]=(0,_.useState)(!1),i=t=>{e(t)};return(0,j.jsx)(Zn,{children:(0,j.jsxs)(Qn,{$isDragging:n,onClick:()=>{t.current?.click()},onDrop:e=>{e.preventDefault(),r(!1),e.dataTransfer.files&&e.dataTransfer.files.length>0&&i(e.dataTransfer.files)},onDragOver:e=>{e.preventDefault(),r(!0)},onDragLeave:()=>{r(!1)},children:[(0,j.jsx)($n,{ref:t,type:`file`,accept:`.bplace`,multiple:!1,onChange:e=>{e.target.files&&i(e.target.files)}}),(0,j.jsxs)(er,{children:[(0,j.jsx)(tr,{children:(0,j.jsx)(Xn,{})}),(0,j.jsx)(nr,{children:`Drag & drop files here`}),(0,j.jsx)(rr,{children:`or click to browse`})]})]})})}var ar=Hn.img`
-    width: 50vw;
+    width: clamp(250px, 25vw, 600px);
     outline: 2px solid ${({theme:e})=>e.colors.border1};
     outline-offset: 2px;
     image-rendering: pixelated;
@@ -149,4 +149,4 @@ Error generating stack: `+e.message+`
     flex-direction: column;
     align-items: center;
 `;function mr(){let e=e=>{e.preventDefault()},[t,n]=(0,_.useState)(localStorage.getItem(`theme`)),[r,i]=(0,_.useState)(null);return(0,j.jsx)(Pn,{theme:t==`light`?Un:Wn,children:(0,j.jsxs)(pr,{onDragOver:e,onDrop:e,children:[(0,j.jsx)(Yn,{onClick:()=>{n(e=>{let t=e===`light`?`dark`:`light`;return localStorage.setItem(`theme`,t),t})}}),(0,j.jsx)(`h1`,{children:`Better Place File Explorer`}),(0,j.jsx)(ir,{onFileSelected:async e=>{let t=e.item(0);if(!t)return;let n=await t.text();i(JSON.parse(n))}}),(0,j.jsx)(or,{template:r}),(0,j.jsx)(fr,{template:r})]})})}var hr=document.getElementById(`root`);g.createRoot(hr).render((0,j.jsx)(_.StrictMode,{children:(0,j.jsx)(mr,{})}));
-//# sourceMappingURL=index-DUOCu5fy.js.map
+//# sourceMappingURL=index-CCdtWcAe.js.map
