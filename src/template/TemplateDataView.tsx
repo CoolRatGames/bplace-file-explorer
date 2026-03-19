@@ -93,7 +93,7 @@ export default function TemplateDataView({ template }: Props) {
        <Table>
            <Tbody>
                <TableEntry tName="Version" tValue={template.version} />
-               <TableEntry tName="Exported At" tValue={template.version} />
+               <TableEntry tName="Exported At" tValue={template.exportedAt} />
                <TableEntry tName="Name" tValue={template.template.name} />
                <TableEntry tName="Opacity" tValue={template.template.opacity} />
                <TableEntry tName="Position" tValue={positionEntry} />
