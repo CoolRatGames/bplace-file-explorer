@@ -2,7 +2,9 @@ import type {TemplateFile} from "./Types.ts";
 import styled from "styled-components";
 
 const Container = styled.img`
-    width: 25%;
+    width: 50vw;
+    outline: 2px solid ${({theme}) => theme.colors.border1};
+    outline-offset: 2px;
     image-rendering: pixelated;
 `;
 
