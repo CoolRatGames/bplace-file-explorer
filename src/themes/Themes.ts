@@ -2,8 +2,8 @@ export const THEME_LIGHT = {
     colors: {
         theme: "light",
         background1: "#FFFFFF",
-        text1: "#000000",
-        border1: "#000000",
+        text1: "#373737",
+        border1: "#454545",
     },
 };
 
