@@ -1,5 +1,6 @@
 import styled, {css} from "styled-components";
 import React, {useRef, useState} from "react";
+import FolderIcon from "./icons/FolderIcon.tsx";
 
 const Container = styled.div`
     display: flex;
@@ -63,6 +64,7 @@ const Content = styled.div`
 
 const Icon = styled.div`
     font-size: 32px;
+    color: ${({ theme }) => theme.colors.text1};
 `;
 
 const Title = styled.div`
@@ -123,7 +125,7 @@ export default function FileChooser({ onFileSelected }: Props) {
                 />
 
                 <Content>
-                    <Icon>📂</Icon>
+                    <Icon><FolderIcon/></Icon>
                     <Title>Drag & drop files here</Title>
                     <Subtitle>or click to browse</Subtitle>
                 </Content>
