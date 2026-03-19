@@ -21,11 +21,15 @@ const RootContainer = styled.div`
 
 export default function App() {
     const preventDragDrop: (e: React.DragEvent<HTMLDivElement>) => void = (e) => { e.preventDefault(); };
-    const [theme, setTheme] = useState("dark");
+    const [theme, setTheme] = useState(localStorage.getItem("theme"));
     const [template, setTemplate] = useState<TemplateFile | null>(null);
 
     const toggleTheme = () => {
-        setTheme(prev => (prev === "light" ? "dark" : "light"));
+        setTheme(prev => {
+            const newTheme = (prev === "light" ? "dark" : "light");
+            localStorage.setItem("theme", newTheme);
+            return newTheme;
+        });
     };
 
     const onFileChoose = async (list: FileList) => {
